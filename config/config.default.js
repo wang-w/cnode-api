@@ -17,6 +17,7 @@ module.exports = appInfo => {
         csrf: {
             enable: false,
         },
+        domainWhiteList: ['http://localhost:3000'], //配置白名单
     };
 
     config.jwt = {
