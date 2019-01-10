@@ -31,5 +31,14 @@ module.exports = appInfo => {
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
     };
 
+    config.bodyParser = {
+      jsonLimit: '0.0001kb',
+      formLimit: '0.0001kb',
+    };
+
+    exports.multipart = {
+      mode: 'file',
+    };
+
     return config;
 };
